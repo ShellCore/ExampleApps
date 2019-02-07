@@ -2,20 +2,25 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/conMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/btnAndroid"
-        style="@style/CircleButtonStyle"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/ic_android"
+    <com.shell.android.mybaselibrary.ui.MenuButton
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:text="@string/app_name"
+        app:src="@drawable/ic_android" />
+
 
     <LinearLayout
+        style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -28,21 +33,19 @@
 
         <Button
             android:id="@+id/btnEnable"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/colorAccent"
-            android:text="@string/btn_enable"
-            android:textColor="@android:color/white" />
+            android:text="@string/btn_enable" />
 
         <Button
             android:id="@+id/btnDisable"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/colorDisabled"
-            android:text="@string/btn_disable"
-            android:textColor="@android:color/white" />
+            android:text="@string/btn_disable" />
 
     </LinearLayout>
 

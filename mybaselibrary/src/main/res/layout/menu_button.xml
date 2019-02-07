@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.hdodenhof.circleimageview.CircleImageView xmlns:tools="http://schemas.android.com/tools"
+    style="@style/menu_button_style"
+    tools:src="@drawable/ic_default" />

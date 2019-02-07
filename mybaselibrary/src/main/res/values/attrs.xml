@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MenuButton">
+        <attr name="src" format="reference" />
+        <attr name="text" format="reference|string" />
+        <attr name="enabled" format="boolean" />
+        <attr name="visible" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="4" />
+            <enum name="gone" value="8" />
+        </attr>
+    </declare-styleable>
+</resources>
